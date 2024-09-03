@@ -16,9 +16,11 @@ const config: Config = {
     },
     colors: {
       primary: {
+        0: '#fff',
         50: '#f5f5f5',
         100: '#e0e0e0',
         200: '#c0c0c0',
+        250:'#AAA',
         300: '#AAAAAA',
         350: '#303030',
         400: '#808080',

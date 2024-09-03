@@ -1,9 +1,12 @@
 import Image from "next/image";
+import SideBar from "./_components/SideBar";
+import "../app/globals.css"
 
 export default function Home() {
   return (
     <>
-    <div>
-      thanh</div></>
+    <SideBar/>
+    <div></div>
+    </>
   );
 }

@@ -24,11 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link   rel="icon" href="/icon.png" sizes=""/>
+      <link rel="icon" href="/icon.png" sizes=""/>
       <body className={`${roboto.className} antialiased bg-primary-850 text-primary-100 min-h-screen flex flex-col relative`}>
         <Header/>
-        <div className="flex-1 px-8 py-12 grid">
-          <main className="max-w-7xl mx-auto w-full">{children}</main>
+        <div className="">
+          <main className="flex justify-between items-center w-full">{children}</main>
         </div>
       </body>
     </html>
