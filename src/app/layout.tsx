@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Roboto } from "next/font/google"
 import Header from "./_components/Header";
+import SideBar from "./_components/SideBar";
 
 const roboto = Roboto({
   weight: ['400', '700'],
@@ -25,10 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/icon.png" sizes=""/>
-      <body className={`${roboto.className} antialiased bg-primary-850 text-primary-100 min-h-screen flex flex-col relative`}>
+      <body className={`${roboto.className} antialiased bg-primary-850 text-primary-100 min-h-screen box-border relative`}>
         <Header/>
         <div className="">
-          <main className="flex justify-between items-center w-full">{children}</main>
+        <SideBar/>
+          <main className="flex justify-end items-center w-full">{children}</main>
         </div>
       </body>
     </html>

@@ -1,14 +1,30 @@
 "use client";
-import Image from "next/image";
-import React, { useState } from "react";
+import Link from "next/link";
 import "../globals.css";
 import Channel from "./Channel";
-import { ExploreIcon, HistoryIcon, HomeIcon, LibraryIcon, LikedVideosIcon, SubscriptionsIcon, WatchLateIcon, YourVideosIcon } from "./SidebarItem";
+import {
+  ExploreIcon,
+  GamingIcon,
+  HelpIcon,
+  HistoryIcon,
+  HomeIcon,
+  LibraryIcon,
+  LikedVideosIcon,
+  LiveIcon,
+  ReportHistoryIcon,
+  SendFeedbackIcon,
+  SettingIcon,
+  SportIcon,
+  SubscriptionsIcon,
+  WatchLateIcon,
+  YourVideosIcon,
+  YoutubePremiumIcon,
+} from "./SidebarItem";
 
 function SideBar() {
   return (
     <>
-      <div className="custom-scroll h-[100vh] fixed top-[62.71px] bottom-0 z-10 bg-primary-700 overflow-y-scroll">
+      <div className="custom-scroll flex-1 h-[100vh] fixed top-[62.71px] bottom-0 z-10 bg-primary-700 overflow-y-scroll">
         <div className="sticky pb-[46px] z-[9] flex flex-col justify-center items-end bg-primary-700 ">
           <div className="py-3 w-full flex flex-col justify-start items-center">
             <HomeIcon />
@@ -17,11 +33,11 @@ function SideBar() {
           </div>
           <span className="h-[1px] w-full bg-primary-350"></span>
           <div className="py-3 w-full flex flex-col justify-start items-center">
-            <LibraryIcon/>
-            <HistoryIcon/>
-            <YourVideosIcon/>
-            <WatchLateIcon/>
-            <LikedVideosIcon/>
+            <LibraryIcon />
+            <HistoryIcon />
+            <YourVideosIcon />
+            <WatchLateIcon />
+            <LikedVideosIcon />
           </div>
           <span className="h-[1px] w-full bg-primary-350"></span>
           <div className="py-3 w-full flex flex-col justify-start items-start">
@@ -31,11 +47,78 @@ function SideBar() {
             <Channel />
           </div>
           <span className="h-[1px] w-full bg-primary-350"></span>
-          <div className="py-3 w-full flex flex-col justify-start items-center"></div>
+          <div className="py-3 w-full flex flex-col justify-start items-start">
+            <h1 className="px-6 py-2 text-primary-250 text-sm font-bold uppercase">
+              More from youtube
+            </h1>
+            <YoutubePremiumIcon />
+            <GamingIcon />
+            <LiveIcon />
+            <SportIcon />
+          </div>
           <span className="h-[1px] w-full bg-primary-350"></span>
-          <div className="py-3 w-full flex flex-col justify-start items-center"></div>
+          <div className="py-3 w-full flex flex-col justify-start items-start">
+            <SettingIcon />
+            <ReportHistoryIcon />
+            <HelpIcon />
+            <SendFeedbackIcon />
+          </div>
           <span className="h-[1px] w-full bg-primary-350"></span>
-          <div className="py-3"></div>
+          <div className="py-3 w-full flex flex-col justify-start items-start">
+            <div className="w-full px-6 pt-4">
+              <div className="flex justify-start items-center gap-2">
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  About
+                </Link>
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  Press
+                </Link>
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  Copyright
+                </Link>
+              </div>
+              <div className="flex justify-start items-center gap-2">
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  Contact us
+                </Link>
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  Creator
+                </Link>
+              </div>
+              <div className="flex justify-start items-center gap-2">
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  Advertise
+                </Link>
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  Developers
+                </Link>
+              </div>
+            </div>
+            <div className="w-full px-6 pt-3">
+              <div className="flex justify-start items-center gap-2">
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  Term
+                </Link>
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  Privacy
+                </Link>
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  Policy & Safety
+                </Link>
+              </div>
+              <div className="flex justify-start items-center gap-2">
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  How Youtube Works
+                </Link>
+              </div>
+              <div className="flex justify-start items-center gap-2 ">
+                <Link className="text-[13px] font-bold text-primary-250" href="">
+                  Test new features
+                </Link>
+              </div>
+            </div>
+            <p className="w-full px-6 py-4 text-xs font-bold text-primary-250">© 2021 Google LLC</p>
+          </div>
         </div>
       </div>
     </>
