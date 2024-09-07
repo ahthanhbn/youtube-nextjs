@@ -33,10 +33,7 @@ const config: Config = {
         950: '#212121', 
       },
     },
-    margin: {
-      '16/100' : '16.22%'  , // Thêm margin 20%
-      '83/100' : '83.42%'   // Thêm margin 20%
-    },
+  
   },
   plugins: [],
 };

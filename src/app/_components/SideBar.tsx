@@ -24,8 +24,8 @@ import {
 function SideBar() {
   return (
     <>
-      <div className="custom-scroll flex-1 h-[100vh] fixed top-[62.71px] bottom-0 z-10 bg-primary-700 overflow-y-scroll">
-        <div className="sticky pb-[46px] z-[9] flex flex-col justify-center items-end bg-primary-700 ">
+      <div className="custom-scroll h-[calc(100% -56px)] z-10 bg-primary-700 overflow-hidden overflow-y-scroll">
+        <div className=" w-full pb-[46px] z-[9]  bg-primary-700 ">
           <div className="py-3 w-full flex flex-col justify-start items-center">
             <HomeIcon />
             <ExploreIcon />

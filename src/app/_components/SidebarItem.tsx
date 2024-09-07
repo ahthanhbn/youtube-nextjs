@@ -238,7 +238,7 @@ export function YoutubePremiumIcon() {
             />
           </g>
         </svg>
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0 ">
           Youtube Premium
         </p>
       </button>
