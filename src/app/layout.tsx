@@ -27,13 +27,13 @@ export default function RootLayout({
       <body
         className={`${roboto.className} bg-primary-850 text-primary-100 min-h-screen antialiased`}
       >
-        <div className="h-100% flex flex-col justify-start items-start">
+        <div className="h-full flex flex-col justify-start items-start">
           <Header />
-          <div className="h-full flex justify-between items-start">
-            <div className="h-screen">
+          <div className="h-[calc(100%-56px)] flex">
+            <div className="overflow-y-auto shrink-0  h-full">
               <SideBar />
             </div>
-            <div className="">
+            <div className=" overflow-y-auto">
               <main className="">{children}</main>
             </div>
           </div>

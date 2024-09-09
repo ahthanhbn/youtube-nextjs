@@ -5,7 +5,7 @@ import React from 'react'
 function Header() {
     return (
         <>
-            <div className='h-14 w-full px-4 py-2 flex flex-row justify-between items-center bg-primary-700 fixed top-0 z-[100]'>
+            <div className='h-14 w-full px-4 py-2 flex flex-row justify-between items-center bg-primary-700 top-0 z-[100]'>
                 <div className='flex justify-between items-center'>
                     <div className='p-2 flex justify-between items-center' >
                         <button>
