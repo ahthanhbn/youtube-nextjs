@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function TopMenu() {
   interface menuItemTypes {
@@ -33,7 +33,7 @@ function TopMenu() {
   return (
     <>
       <span className="w-full h-[1px] bg-primary-350"></span>
-      <div className=" w-full flex justify-end items-center bg-primary-350">
+      <div className=" w-full flex justify-end items-center bg-primary-350 ">
         <div className="py-3 pl-6 pr-3 flex justify-center items-center">
           <button className="py-2 px-3 bg-primary-0 text-primary-600 rounded-[32px] text-sm font-normal whitespace-nowrap ">
             All
