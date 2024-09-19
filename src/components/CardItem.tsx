@@ -1,55 +1,37 @@
-import Image from 'next/image';
+import "../app/globals.css";
+import Image from "next/image";
 
-function CardItem() {
-  const data = {
-    title: "Shawn Mendes - Stitches (Lyrics) | The Chainsmokers, Justin Bieber, Ed Sheeran | Mixed Lyrics",
-    date: "Youtube",
-    channelTitle: "ʟʏʀɪᴄᴀʟ ᴍɪʀᴀᴄʟᴇꜱ",
-
-    thumbnails: {
-      default: {
-        url: "https://i.ytimg.com/vi/MU8B4XDI3Uw/default.jpg    ",
-        width: 120,
-        height: 90,
-      },
-      medium: {
-        url: "https://i.ytimg.com/vi/MU8B4XDI3Uw/mqdefault.jpg",
-        width: 320,
-        height: 180,
-      },
-      high: {
-        url: "https://i.ytimg.com/vi/MU8B4XDI3Uw/hqdefault.jpg",
-        width: 480,
-        height: 360,
-      },
-    },
-  };
+function CardItem({ item }: any) {
+  console.log(item);
+  const { title, thumbnails, channelTitle } = item.snippet;
 
   return (
     <>
-      <div className="">
-        <div>
+      <div className="pb-[18px] flex flex-col">
+        <div className="w-full h-[155px]">
           <Image
-            src={data.thumbnails.default.url}
-            width={data.thumbnails.default.width}
-            height={data.thumbnails.default.height}
-            alt="testing"
+            className="w-full h-full object-cover "
+            src={thumbnails.default.url}
+            width={thumbnails.default.width}
+            height={thumbnails.default.height}
+            alt="Video Card"
           />
         </div>
-        <div>
-          <div className='rounded-full overflow-hidden'>
-            <Image className='rounded-full w-8 h-8 object-cover'
-              src={data.thumbnails.default.url}
+        <div className="flex h-full pt-3 justify-start items-start gap-3 ">
+          <div className="rounded-full overflow-hidden shrink-0">
+            <Image
+              className="rounded-full w-8 h-8 object-cover"
+              src={thumbnails.default.url}
               width={100}
               height={100}
               alt="testing"
             />
           </div>
-          <div>
-            <h3>{data.title}</h3>
-            <h4>{data.channelTitle}</h4>
+          <div className="w-full h-full  flex flex-col justify-between items-start">
+            <h3 className="limited-text">{title}</h3>
             <div>
-                <p>15M view</p>
+              <h4 className="text-xs">{channelTitle}</h4>
+              <p>15M view</p>
             </div>
           </div>
         </div>
