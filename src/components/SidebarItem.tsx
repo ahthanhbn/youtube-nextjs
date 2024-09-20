@@ -1,13 +1,11 @@
-import React from "react";
-
 function SidebarItem() {
-  return <></>;
+  return <></>
 }
 
 export function HomeIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center gap-6 items-center  bg-primary-350 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center gap-6 items-center  bg-dark-350 hover:bg-dark-350">
         <svg
           width="16"
           height="18"
@@ -24,18 +22,16 @@ export function HomeIcon() {
           </g>
         </svg>
 
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Home
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Home</p>
       </button>
     </>
-  );
+  )
 }
 
 export function ExploreIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="20"
           height="20"
@@ -51,17 +47,15 @@ export function ExploreIcon() {
             />
           </g>
         </svg>
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Explore
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Explore</p>
       </button>
     </>
-  );
+  )
 }
 export function SubscriptionsIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="20"
           height="18"
@@ -78,17 +72,15 @@ export function SubscriptionsIcon() {
           </g>
         </svg>
 
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Subscriptions
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Subscriptions</p>
       </button>
     </>
-  );
+  )
 }
 export function LibraryIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="18"
           height="18"
@@ -104,17 +96,15 @@ export function LibraryIcon() {
             />
           </g>
         </svg>
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Library
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Library</p>
       </button>
     </>
-  );
+  )
 }
 export function HistoryIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="21"
           height="20"
@@ -131,17 +121,15 @@ export function HistoryIcon() {
           </g>
         </svg>
 
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          History
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">History</p>
       </button>
     </>
-  );
+  )
 }
 export function YourVideosIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="18"
           height="18"
@@ -158,17 +146,15 @@ export function YourVideosIcon() {
           </g>
         </svg>
 
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Your Videos
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Your Videos</p>
       </button>
     </>
-  );
+  )
 }
 export function WatchLateIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="20"
           height="20"
@@ -185,18 +171,16 @@ export function WatchLateIcon() {
           </g>
         </svg>
 
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Watch Late
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Watch Late</p>
       </button>
     </>
-  );
+  )
 }
 
 export function LikedVideosIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="18"
           height="17"
@@ -212,17 +196,15 @@ export function LikedVideosIcon() {
             />
           </g>
         </svg>
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Liked Videos
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Liked Videos</p>
       </button>
     </>
-  );
+  )
 }
 export function YoutubePremiumIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="20"
           height="14"
@@ -238,17 +220,15 @@ export function YoutubePremiumIcon() {
             />
           </g>
         </svg>
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0 ">
-          Youtube Premium
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0 ">Youtube Premium</p>
       </button>
     </>
-  );
+  )
 }
 export function GamingIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="20"
           height="16"
@@ -264,17 +244,15 @@ export function GamingIcon() {
             />
           </g>
         </svg>
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Gaming
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Gaming</p>
       </button>
     </>
-  );
+  )
 }
 export function LiveIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="20"
           height="16"
@@ -290,17 +268,15 @@ export function LiveIcon() {
             />
           </g>
         </svg>
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Live
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Live</p>
       </button>
     </>
-  );
+  )
 }
 export function SportIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="16"
           height="20"
@@ -317,17 +293,15 @@ export function SportIcon() {
           </g>
         </svg>
 
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Sport
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Sport</p>
       </button>
     </>
-  );
+  )
 }
 export function SettingIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="20"
           height="20"
@@ -344,17 +318,15 @@ export function SettingIcon() {
           </g>
         </svg>
 
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Setting
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Setting</p>
       </button>
     </>
-  );
+  )
 }
 export function ReportHistoryIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="15"
           height="18"
@@ -371,17 +343,15 @@ export function ReportHistoryIcon() {
           </g>
         </svg>
 
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Report History
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Report History</p>
       </button>
     </>
-  );
+  )
 }
 export function HelpIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="20"
           height="20"
@@ -398,17 +368,15 @@ export function HelpIcon() {
           </g>
         </svg>
 
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Help
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Help</p>
       </button>
     </>
-  );
+  )
 }
 export function SendFeedbackIcon() {
   return (
     <>
-      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-primary-350">
+      <button className="w-full py-2 pl-6 pr-2 flex justify-center items-center gap-6 hover:bg-dark-350">
         <svg
           width="16"
           height="20"
@@ -424,13 +392,10 @@ export function SendFeedbackIcon() {
             />
           </g>
         </svg>
-        <p className="w-36 text-left py-1 tex t-sm font-normal text-primary-0">
-          Send Feedback
-        </p>
+        <p className="w-36 text-left py-1 tex t-sm font-normal text-dark-0">Send Feedback</p>
       </button>
     </>
-  );
+  )
 }
 
-
-export default SidebarItem;
+export default SidebarItem

@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/icon.png" sizes="" />
       <body
-        className={`${roboto.className} bg-primary-850 text-primary-100 min-h-screen antialiased`}
+        className={`${roboto.className} bg-dark-850 text-dark-100 min-h-screen antialiased`}
       >
         <div className="h-full flex flex-col justify-start items-start">
           <Header />

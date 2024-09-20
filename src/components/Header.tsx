@@ -5,7 +5,7 @@ import React from 'react'
 function Header() {
     return (
         <>
-            <div className='h-14 w-full px-4 py-2 flex flex-row justify-between items-center bg-primary-700 top-0 z-[100]'>
+            <div className='h-14 w-full px-4 py-2 flex flex-row justify-between items-center bg-dark-700 top-0 z-[100]'>
                 <div className='flex justify-between items-center'>
                     <div className='p-2 flex justify-between items-center' >
                         <button>
@@ -19,13 +19,13 @@ function Header() {
                     </div>
                 </div>
                 <div className='flex justify-center items-center gap-1 '>
-                    <form className='  bg-primary-350 p-[1px] flex justify-between items-center'>
-                        <input className=' text-base w-[362px] py-2.5 pl-2 bg-primary-800 placeholder-primary-300 rounded-[2px_0px_0px_2px] focus:outline-none focus:placeholder-primary-350' type="text" name="search" id="search" placeholder='Search' />
+                    <form className='  bg-dark-350 p-[1px] flex justify-between items-center'>
+                        <input className=' text-base w-[362px] py-2.5 pl-2 bg-dark-800 placeholder-dark-300 rounded-[2px_0px_0px_2px] focus:outline-none focus:placeholder-dark-350' type="text" name="search" id="search" placeholder='Search' />
                         <button className='py-[8px] px-[20px]'>
                             <Image src="/search-icon.svg" width={17.87} height={17.88} alt='Youtube' />
                         </button>
                     </form>
-                    <div className='  flex justify-center items-center p-3 rounded-[40px] bg-primary-900 shrink-0'>
+                    <div className='  flex justify-center items-center p-3 rounded-[40px] bg-dark-900 shrink-0'>
                         <button className='px-[5.5px] py-[3px]'>
                             <Image src="/voice.svg" width={13} height={18} alt='voice' />
                         </button>

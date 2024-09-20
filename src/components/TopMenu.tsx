@@ -32,10 +32,10 @@ function TopMenu() {
   }
   return (
     <>
-      <span className="w-full h-[1px] bg-primary-350"></span>
-      <div className=" w-full flex justify-end items-center bg-primary-350 ">
+      <span className="w-full h-[1px] bg-dark-350"></span>
+      <div className=" w-full flex justify-end items-center bg-dark-350 ">
         <div className="py-3 pl-6 pr-3 flex justify-center items-center">
-          <button className="py-2 px-3 bg-primary-0 text-primary-600 rounded-[32px] text-sm font-normal whitespace-nowrap ">
+          <button className="py-2 px-3 bg-dark-0 text-dark-600 rounded-[32px] text-sm font-normal whitespace-nowrap ">
             All
           </button>
         </div>
@@ -45,14 +45,14 @@ function TopMenu() {
               key={item}
               className="py-3 pr-3 flex justify-center items-center"
             >
-              <button className="py-2 px-3 bg-primary-0 text-primary-600 rounded-[32px] text-sm font-normal whitespace-nowrap ">
+              <button className="py-2 px-3 bg-dark-0 text-dark-600 rounded-[32px] text-sm font-normal whitespace-nowrap ">
                 {item}
               </button>
             </div>
           );
         })}
         <div className="py-[20px] px-[20px] flex justify-center items-center absolute top-0 right-0  ">
-          <button className="py-[2.64px] px-[4.97px] bg-primary-0 text-primary-600 rounded-[32px] text-sm font-normal whitespace-nowrap ">
+          <button className="py-[2.64px] px-[4.97px] bg-dark-0 text-dark-600 rounded-[32px] text-sm font-normal whitespace-nowrap ">
             <svg
               width="8"
               height="12"
@@ -71,7 +71,7 @@ function TopMenu() {
           </button>
         </div>
       </div>
-      <span className="w-full h-[1px] bg-primary-350"></span>
+      <span className="w-full h-[1px] bg-dark-350"></span>
     </>
   );
 }
