@@ -6,15 +6,16 @@ function CardItem({ items }: any) {
   return (
     <>
       <div className="pb-[18px] flex flex-col">
-        <div className="w-full h-[155px]">
+        <div className="w-full h-[155px] relative">
           <Image
-            className="w-full h-full object-cover relative "
+            className="w-full h-full object-cover  "
             src={thumbnails.high.url}
             width={thumbnails.high.width}
             height={thumbnails.high.height}
             alt="Video Card"
           />
-          
+          <span className='inline-block px-1 py-[3px] bg-dark-600 text-dark-0 absolute bottom-1 right-1 text-[10px] font-normal'>22:13</span>
+
           
           
         </div>
