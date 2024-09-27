@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Channel from "./Channel";
+import Channel from "@/components/layout/sidebar/SidebarItem";
 import {
   ExploreIcon,
   GamingIcon,
@@ -18,7 +18,9 @@ import {
   WatchLateIcon,
   YourVideosIcon,
   YoutubePremiumIcon,
-} from "./SidebarItem";
+} from "@/components/layout/sidebar/SidebarItem";
+
+
 
 function SideBar() {
   return (

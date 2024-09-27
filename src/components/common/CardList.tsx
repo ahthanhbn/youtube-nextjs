@@ -2,7 +2,7 @@ import { getAllSuggestVideos } from '@/api/data'
 
 import CardItem from './CardItem'
 
-async function Card() {
+async function CardList() {
   const listVideo = await getAllSuggestVideos()
   return (
     <>
@@ -13,7 +13,7 @@ async function Card() {
             return (
               <CardItem
                 key={item.id.videoId}
-                items={item}
+                item={item}
               />
             )
           })}
@@ -22,4 +22,4 @@ async function Card() {
   )
 }
 
-export default Card
+export default CardList

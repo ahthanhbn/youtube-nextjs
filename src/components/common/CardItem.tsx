@@ -1,11 +1,11 @@
-import '../app/globals.css'
+import Link from 'next/link'
 import Image from 'next/image'
 
-function CardItem({ items }: any) {
-  const { title, thumbnails, channelTitle } = items.snippet
+function CardItem({ item }: any) {
+  const { title, thumbnails, channelTitle } = item.snippet
   return (
     <>
-      <div className="pb-[18px] flex flex-col">
+      <Link href={`/${item.id.videoId}`} className="pb-[18px] flex flex-col">
         <div className="w-full h-[155px] relative">
           <Image
             className="w-full h-full object-cover  "
@@ -29,15 +29,15 @@ function CardItem({ items }: any) {
               alt="testing"
             />
           </div>
-          <div className="w-full h-full  flex flex-col justify-between items-start">
-            <h3 className="limited-text text-xs font-bold text-dark-0">{title}</h3>
+          <div className="w-full h-full pr-6 flex flex-col justify-between items-start">
+            <h3 className="line-clamp-2 text-xs font-bold text-dark-0">{title}</h3>
             <div>
               <h4 className="text-xs text-dark-250 font-normal">{channelTitle}</h4>
               <p className="text-xs text-dark-250 font-normal">15K View . 1 week ago</p>
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </>
   )
 }

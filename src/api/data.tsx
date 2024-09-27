@@ -17,3 +17,29 @@ export async function getAllSuggestVideos() {
     console.error(error)
   }
 }
+
+type videoIdType = {
+  videoId: string
+}
+
+export async function getVideoDetail(videoId: videoIdType) {
+  const url =
+    `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails%2Csnippet%2Cstatistics&id=${videoId.videoId}`
+  const options = {
+    method: 'GET' ,
+    headers: {
+      'x-rapidapi-key': '0ba78003e6mshe4b8bdbe582d02ap11872fjsn5e4aa5befd4a',
+      'x-rapidapi-host': 'youtube-v31.p.rapidapi.com',
+    },
+  }
+
+  try {
+    const response = await fetch(url, options);
+    const result = await response.json();
+    // console.log("ktestlog " + JSON.stringify(result));
+    // return JSON.stringify(result);
+    return result;
+  } catch (error) {
+    console.error(error)
+  }
+}
