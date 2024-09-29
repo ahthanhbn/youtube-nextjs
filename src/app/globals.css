@@ -31,6 +31,7 @@ body::-webkit-scrollbar-thumb {
     background-clip: content-box;
     background-color: hsl(0, 0%, 67%);
 }
+
 body::-webkit-scrollbar-thumb {
     height: 56px;
     border-radius: 8px;

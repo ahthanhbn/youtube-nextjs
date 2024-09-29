@@ -2,7 +2,9 @@ import React from 'react'
 
 function StaticVideo() {
   return (
-    <div></div>
+    <div>
+        
+    </div>
   )
 }
 

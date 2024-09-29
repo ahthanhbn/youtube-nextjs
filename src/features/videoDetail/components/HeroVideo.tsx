@@ -5,8 +5,8 @@ function HeroVideo({videoId}:HeroVideoProps) {
   // console.log("thanh",videoId);
   return (
     <iframe
-      width="560"
-      height="315"
+      width="640"
+      height="360"
       src={`https://www.youtube.com/embed/${videoId}?si=PRltJdPq5NPO0a3G`}
       title="YouTube video player"
       frameBorder="0"

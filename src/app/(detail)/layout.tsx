@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${roboto.className} bg-dark-850 text-dark-100 min-h-screen antialiased`}>
         <div className="h-full flex flex-col justify-start items-start">
           <Header />
-          <div className="h-[calc(100%-56px)] flex">
+          <div className="w-full">
             <main>{children}</main>
           </div>
         </div>

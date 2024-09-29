@@ -23,10 +23,9 @@ type videoIdType = {
 }
 
 export async function getVideoDetail(videoId: videoIdType) {
-  const url =
-    `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails%2Csnippet%2Cstatistics&id=${videoId.videoId}`
+  const url = `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails%2Csnippet%2Cstatistics&id=${videoId.videoId}`
   const options = {
-    method: 'GET' ,
+    method: 'GET',
     headers: {
       'x-rapidapi-key': '0ba78003e6mshe4b8bdbe582d02ap11872fjsn5e4aa5befd4a',
       'x-rapidapi-host': 'youtube-v31.p.rapidapi.com',
@@ -34,12 +33,33 @@ export async function getVideoDetail(videoId: videoIdType) {
   }
 
   try {
-    const response = await fetch(url, options);
-    const result = await response.json();
+    const response = await fetch(url, options)
+    const result = await response.json()
     // console.log("ktestlog " + JSON.stringify(result));
     // return JSON.stringify(result);
-    return result;
+    return result
   } catch (error) {
     console.error(error)
   }
 }
+
+export async function getVideoRelate() {
+  const url =
+    'https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=RDZiQo7nAkQHU&part=snippet&maxResults=50'
+  const options = {
+    method: 'GET',
+    headers: {
+      'x-rapidapi-key': '0ba78003e6mshe4b8bdbe582d02ap11872fjsn5e4aa5befd4a',
+      'x-rapidapi-host': 'youtube-v31.p.rapidapi.com',
+    },
+  }
+
+  try {
+    const response = await fetch(url, options)
+    const result = await response.json()
+    return result
+  } catch (error) {
+    console.error(error)
+  }
+}
+

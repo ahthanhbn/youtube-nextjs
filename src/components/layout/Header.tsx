@@ -17,7 +17,7 @@ function Header() {
             </button>
           </div>
           <div className=" flex justify-between items-center pl-4 pr-[14px] py-[10px]">
-            <Link href="">
+            <Link href="/">
               <Image
                 src="/yt.svg"
                 width={89.59}
