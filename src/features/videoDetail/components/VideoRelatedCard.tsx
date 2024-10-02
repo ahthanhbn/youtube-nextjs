@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 function VideoRelatedCard({ video }: any) {
-  const { thumbnails, title, videoOwnerChannelTitle } = video.snippet
+  const { thumbnails, title, videoOwnerChannelTitle, resourceId } = video.snippet
   return (
-    <Link href={`/${video.id}`}>
+    <Link href={`/${resourceId.videoId}`}>
       <div className="w-[402px] flex gap-2">
         <div className="w-[168px] h-[94px] shrink-0 relative ">
           <Image

@@ -13,8 +13,16 @@ async function VideoPageDetail(props: VideoDetailProps) {
   const data = await getVideoDetail({ videoId: id })
   const relatedData = await getVideoRelate()
   // console.log(relatedData)
-  // console.log("Thanh", data.items[0].id);
-  return <VideoDetail id={data.items[0].id} related={relatedData.items} />
+  // console.log("Thanh", data?.items[0]);
+  const {items} = await data
+  return (
+    <VideoDetail
+      title={items[0]}
+      vdId={items[0]?.id}
+      channel = {items[0]?.snippet.channelId}
+      related={relatedData.items}
+    />
+  )
 }
 
 export default VideoPageDetail

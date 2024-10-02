@@ -63,3 +63,25 @@ export async function getVideoRelate() {
   }
 }
 
+type channelIdType = {
+  channelId: string
+}
+export async function getChannelDetail(channelId:channelIdType){
+  const url = `https://youtube-v31.p.rapidapi.com/channels?part=snippet%2Cstatistics&id=${channelId}`;
+const options = {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '0ba78003e6mshe4b8bdbe582d02ap11872fjsn5e4aa5befd4a',
+		'x-rapidapi-host': 'youtube-v31.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.json();
+	return result;
+} catch (error) {
+	console.error(error);
+}
+}
+

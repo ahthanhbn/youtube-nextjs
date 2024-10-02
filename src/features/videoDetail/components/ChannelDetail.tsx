@@ -1,8 +1,13 @@
-import React from 'react'
+import Link from 'next/link'
 
-function ChannelDetail() {
+function ChannelDetail({ channelId }: any) {
   return (
-    <div></div>
+    <Link
+      href={`/channel/${channelId}`}
+      className="pb-[18px] flex flex-col"
+    >
+      Channel
+    </Link>
   )
 }
 

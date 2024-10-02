@@ -4,7 +4,7 @@ import CardItem from './CardItem'
 
 async function CardList() {
   const listVideo = await getAllSuggestVideos();
-  console.log(listVideo);
+  // console.log(listVideo);
   return (
     <>
       <div className="grid grid-cols-4 gap-x-4 gap-y-10 px-6 py-[25px]">

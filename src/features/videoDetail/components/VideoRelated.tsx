@@ -5,7 +5,7 @@ type VideoRelatedProps = {
   details: any
 }
 function VideoRelated({ details }: VideoRelatedProps) {
-  console.log(details)
+  // console.log(details)
   return (
     <>
       <div className='flex gap-2 py-2'>
